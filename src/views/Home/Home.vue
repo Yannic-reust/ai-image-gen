@@ -1,12 +1,16 @@
 <template>
   <div id="Home" class="bg-primary">
     <h1>awsdasd</h1>
+    <TitleBackground></TitleBackground>
   </div>
 </template>
 <script lang="ts">
+import TitleBackground from "../../components/TitleBackground/TitleBackground.vue";
 export default {
   name: "Home",
-  components: {},
+  components: {
+    TitleBackground,
+  },
   setup() {},
 
   data() {

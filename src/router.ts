@@ -1,8 +1,10 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter, RouteRecordRaw } from "vue-router";
 import Home from "./views/Home/Home.vue";
 
 
-const routes = [
+
+
+const routes: Array<RouteRecordRaw> =  [
   {
     path: "/",
     name: "Home",
@@ -12,7 +14,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 
