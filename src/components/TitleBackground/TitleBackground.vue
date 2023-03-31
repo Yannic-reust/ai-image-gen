@@ -1,12 +1,14 @@
 <template>
   <div id="titleBackground">
     <div class="background"></div>
-    <div class="container"></div>
-    <h1>{{ store.state }}</h1>
-    <form @submit.prevent="emitValue">
-      <input type="text" class="input-text" v-model="searchText" />
-      <button type="submit" class="button-secondary">Search</button>
-    </form>
+    <div class="container">
+      <h1>{{ store.state }}</h1>
+      <form @submit.prevent="emitValue">
+        <input type="text" class="input-text" v-model="searchText" />
+        <button type="submit" class="button-secondary">Search</button>
+      </form>
+      <a href="/detailSearch">Details Search</a>
+    </div>
   </div>
 </template>
 <script lang="ts">
