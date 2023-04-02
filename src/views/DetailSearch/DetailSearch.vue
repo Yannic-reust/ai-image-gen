@@ -20,4 +20,4 @@ export default {
 };
 </script>
 
-<style scoped src="./TitleBackground.scss"></style>
+<style scoped src="./DetailSearch.scss"></style>
