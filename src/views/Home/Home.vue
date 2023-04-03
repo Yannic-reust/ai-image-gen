@@ -1,16 +1,22 @@
 <template>
-  <div id="Home" class="bg-primary">
-    <h1>awsdasd</h1>
+  <div id="Home">
+ 
     <TitleBackground></TitleBackground>
+    <div class="margin-top-5">
+      <ContentPreview></ContentPreview>
+    </div>
+  
   </div>
 </template>
 <script lang="ts">
+import ContentPreview from "../../components/ContentPreview/ContentPreview.vue";
 import TitleBackground from "../../components/TitleBackground/TitleBackground.vue";
 export default {
   name: "Home",
   components: {
     TitleBackground,
-  },
+    ContentPreview
+},
   setup() {},
 
   data() {

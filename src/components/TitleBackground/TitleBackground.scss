@@ -1,0 +1,47 @@
+#titleBackground {
+  height: 100vh;
+  .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  }
+  .background::before {
+    content: "";
+    background-image: url("../../assets/components/background.png");
+    z-index: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: brightness(40%);
+  }
+
+  .input {
+    z-index: 100;
+    form {
+      position: relative;
+
+      input {
+        height: 4.4rem;
+        border: none;
+        color: black;
+      }
+      .icon {
+        height: 75%;
+        position: absolute;
+        top: 12.5%;
+        right: 1%;
+      }
+    }
+
+    button {
+      height: 4rem !important;
+    }
+  }
+}
