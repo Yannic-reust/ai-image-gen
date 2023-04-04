@@ -32,11 +32,17 @@
         border: none;
         color: black;
       }
-      .icon {
+      .transparent {
         height: 75%;
         position: absolute;
-        top: 12.5%;
-        right: 1%;
+        top: 0.2rem;
+        right: -1%;
+        background-color: transparent;
+        border: none;
+        aspect-ratio: 16/9;
+        .icon {
+          height: 100%;
+        }
       }
     }
 
