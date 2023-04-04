@@ -11,9 +11,8 @@ export default {
 <template>
   <div>
     <router-view></router-view>
-    <div class="margin-top-5">
-      <FooterComponent></FooterComponent>
-    </div>
+
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
