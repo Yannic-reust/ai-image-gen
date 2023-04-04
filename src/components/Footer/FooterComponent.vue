@@ -1,7 +1,7 @@
 <template>
-  <div id="footerComponent" class="width-100 bg-secondary">
-    <p class="text-center padding-top-4 text-h3">Footer</p>
-    <p class="text-center margin-top-4 padding-bottom-4 text-h3">
+  <div id="footerComponent" class="width-100">
+    <p class="text-center padding-top-4 text-h3 accent-three">Footer</p>
+    <p class="text-center margin-top-4 padding-bottom-4 text-h3 accent-three">
       &#169; SuperDuper Website 2023
     </p>
   </div>

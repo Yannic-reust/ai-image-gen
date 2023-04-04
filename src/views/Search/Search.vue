@@ -27,16 +27,46 @@
       <div class="row width-100 margin-top-2">
         <div class="col-xs-12 col-md-9">
           <div class="padding-top-5 flex-center bg-boxes radius-16">
-            <div class="width-100 height-70vh">
-              <img src="" alt="Your Image" class="" />
+            <div class="width-100 height-70vh flex-center column">
+              <img
+                src="../../assets/components/background.png"
+                alt="Your Image"
+                class="width-90"
+              />
+              <div
+                class="width-90 flex margin-top-4"
+                style="justify-content: flex-end"
+              >
+                <button class="button-secondary">Regenerate</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-md-3">
           <div class="padding-top-5 bg-boxes radius-16">
-            <div class="width-100 height-70vh">
-              <p class="accent-three margin-left-4 text-h4">Recent:</p>
-              <img src="" alt="" class="" />
+            <div class="width-100 height-70vh flex align-center column recent">
+              <p class="accent-three text-h4">Recent:</p>
+              <!-- <img src="" alt="" class="" /> -->
+              <img
+                src="../../assets/components/background.png"
+                alt="Your Image"
+                class="width-90 margin-top-4"
+              />
+              <img
+                src="../../assets/components/background.png"
+                alt="Your Image"
+                class="width-90 margin-top-4"
+              />
+              <img
+                src="../../assets/components/background.png"
+                alt="Your Image"
+                class="width-90 margin-top-4"
+              />
+              <img
+                src="../../assets/components/background.png"
+                alt="Your Image"
+                class="width-90 margin-top-4"
+              />
             </div>
           </div>
         </div>
