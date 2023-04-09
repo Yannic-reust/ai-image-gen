@@ -3,7 +3,7 @@
     <div class="background">
       <div class="container input">
         <!-- <h1>{{ store.state }}</h1> -->
-        <h1 class="secondary text-d2 margin-left-20">
+        <h1 class=" text-d2 margin-left-20">
           Super Duper Name <br />
           for Website
         </h1>
