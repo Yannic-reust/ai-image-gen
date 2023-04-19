@@ -90,26 +90,41 @@ export default {
       store: useStore(),
       errorTrue: false,
       imageURL: "",
-      data: {
-        inputs: useStore().state.searchText + ", pixelartstyle ",
-        temperature: 0,
-        seed: Math.random(),
-      },
+      data: [
+       useStore().state.searchText + ", pixelartstyle ",
+       /* temperature: 0,
+        seed: Math.random(),*/
+    ],
       recentImages: [],
     };
   },
 
   methods: {
-    regenerate() {
+    /*regenerate() {
       (this.data.seed = Math.random()),
         (this.imageURL = ""),
         (this.errorTrue = false);
       this.fetchImage();
-    },
+    },*/
 
     async fetchImage() {
+      console.log("data")
+      const response = await fetch("https://hslu-di-reust-yannic.hf.space/run/predict", {
+	method: "POST",
+	headers: { "Content-Type": "application/json" },
+	body: JSON.stringify({
+		data: [
+			"hello world",
+		]
+	})
+});
+
+const data = await response.json();
+console.log(data)
+    },
+    /*async fetchImage() {
       await fetch(
-        "https://api-inference.huggingface.co/models/kohbanye/pixel-art-style",
+        "https://hslu-di-reust-yannic.hf.space/run/predict",
         {
           headers: {
             Authorization: "Bearer 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",
@@ -129,7 +144,7 @@ export default {
           }
         }
       });
-    },
+    },*/
   },
 
   async created() {
