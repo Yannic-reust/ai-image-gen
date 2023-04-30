@@ -3,7 +3,10 @@
 * {
   padding: 0px;
   margin: 0px;
+
+
 }
+
 
 $primary: #1f2533;
 $secondary: lightgrey;
@@ -17,3 +20,16 @@ $primary-font: "Inter", sans-serif;
 $secondary-font: "Inter", sans-serif;
 
 @import "./node_modules/blackbox-mit-bdx/index.scss";
+
+::-webkit-scrollbar
+  {
+    width: 12px;
+    background-color: #1f1f1f;
+  }
+  
+::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #121212;
+  }

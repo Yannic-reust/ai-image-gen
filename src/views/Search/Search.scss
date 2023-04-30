@@ -1,5 +1,7 @@
 #search {
+  min-height: 100vh;
   background-color: #121212;
+  
   .bg-boxes {
     background-color: #1f1f1f;
   }
@@ -18,7 +20,9 @@
   
   }
   .recent {
-    overflow: scroll;
+    overflow-y: scroll;
+   
+
   }
   .hidden{
     visibility: hidden;
@@ -33,3 +37,5 @@
     font-size: 4rem;
   }
 }
+
+

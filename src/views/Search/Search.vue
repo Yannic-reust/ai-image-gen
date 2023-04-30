@@ -1,5 +1,5 @@
 <template>
-  <div id="search" class="bg height-100vh">
+  <div id="search" class="bg">
     <div class="width-90 padding-top-5 margin-bottom-5" style="margin-left: 5%">
       <div class="row width-100 height-10vh margin-top-5">
         <div class="col-xs-12">
@@ -54,26 +54,13 @@
             <div class="width-100 height-70vh flex align-center column recent">
               <p class="accent-three text-h4">Recent:</p>
               <!-- <img src="" alt="" class="" /> -->
-              <img
-                src="../../assets/components/background.png"
+              <img 
+              v-for="(recentImage, index) in recentImages" :key="index"
+                :src="recentImage"
                 alt="Your Image"
                 class="width-90 margin-top-4"
               />
-              <img
-                src="../../assets/components/background.png"
-                alt="Your Image"
-                class="width-90 margin-top-4"
-              />
-              <img
-                src="../../assets/components/background.png"
-                alt="Your Image"
-                class="width-90 margin-top-4"
-              />
-              <img
-                src="../../assets/components/background.png"
-                alt="Your Image"
-                class="width-90 margin-top-4"
-              />
+             
             </div>
           </div>
         </div>
@@ -90,38 +77,52 @@ export default {
       store: useStore(),
       errorTrue: false,
       imageURL: "",
-      data: [
-       useStore().state.searchText + ", pixelartstyle ",
-       /* temperature: 0,
-        seed: Math.random(),*/
-    ],
+      data: [useStore().state.searchText + ", pixelartstyle"],
       recentImages: [],
     };
   },
 
   methods: {
-    /*regenerate() {
-      (this.data.seed = Math.random()),
-        (this.imageURL = ""),
-        (this.errorTrue = false);
-      this.fetchImage();
-    },*/
-
     async fetchImage() {
-      console.log("data")
-      const response = await fetch("https://hslu-di-reust-yannic.hf.space/run/predict", {
-	method: "POST",
-	headers: { "Content-Type": "application/json" },
-	body: JSON.stringify({
-		data: [
-			"hello world",
-		]
-	})
-});
+      console.log(JSON.stringify({
+            data: [this.data[0]],
+            temperatur:0.1,
+          }))
+      const response = await fetch(
+        "https://hslu-di-reust-yannic.hf.space/run/predict",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            data: [this.data[0]],
+          
+          }),
+        }
+      ).then(async (response) => {
+        if (response.status >= 400 && response.status < 600) {
+          this.errorTrue = true;
+        } else {
+          const data = await response.json();
+
+          this.imageURL = data.data[0];
+
+          if (this.imageURL) {
+            //@ts-ignore
+            this.recentImages.push(this.imageURL);
+          }
+        }
+      });
+    },
+
+    /*
 
 const data = await response.json();
-console.log(data)
-    },
+
+
+console.log(newStr)
+
+*/
+
     /*async fetchImage() {
       await fetch(
         "https://hslu-di-reust-yannic.hf.space/run/predict",
