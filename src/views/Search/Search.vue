@@ -42,9 +42,9 @@
                 class="width-90 flex margin-top-4"
                 style="justify-content: flex-end"
               >
-                <button class="button-secondary button" @click="regenerate()">
+                <!-- <button class="button-secondary button" @click="regenerate()">
                   Regenerate
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
