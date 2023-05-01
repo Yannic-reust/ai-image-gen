@@ -1,0 +1,41 @@
+#search {
+  min-height: 100vh;
+  background-color: #121212;
+  
+  .bg-boxes {
+    background-color: #1f1f1f;
+  }
+  .text {
+    margin-bottom: -1rem;
+  }
+  .loadingIcon {
+    width: 14rem;
+  }
+  .input {
+    height: 4rem;
+    font-size: 2.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    position: relative;
+  
+  }
+  .recent {
+    overflow-y: scroll;
+   
+
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .button{
+    position: absolute;
+    bottom: 4rem;
+    right: 6rem;
+  }
+  .errorText{
+    color: red;
+    font-size: 4rem;
+  }
+}
+
+

@@ -1,11 +1,9 @@
 <template>
   <div id="Home">
- 
     <TitleBackground></TitleBackground>
-    <div class="margin-top-5">
+    <div class="margin-top-5 margin-bottom-5">
       <ContentPreview></ContentPreview>
     </div>
-  
   </div>
 </template>
 <script lang="ts">
@@ -15,8 +13,8 @@ export default {
   name: "Home",
   components: {
     TitleBackground,
-    ContentPreview
-},
+    ContentPreview,
+  },
   setup() {},
 
   data() {
