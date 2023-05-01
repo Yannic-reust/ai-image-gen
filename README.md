@@ -1,4 +1,23 @@
-# Vue 3 + TypeScript + Vite
+## Installation
+
+- clone the repo and execute npm install in the terminal
+- after the install you have can run npm run serve to start up the project
+
+### Hugginface Model
+
+[kohbanye / pixel-art-style](https://huggingface.co/kohbanye/pixel-art-style?text=a+brown+dog+sitting+in+the+grass%2C++pixelartstyle) 
+
+#### Other interesting models
+
+
+- [SD_PixelArt_SpriteSheet_Generator](https://huggingface.co/Onodofthenorth/SD_PixelArt_SpriteSheet_Generator?text=regular+man+with+brown+hair+from+the+front+with+blue+eyes+in+16bit+style)
+
+- [All-In-One-Pixel_model](https://huggingface.co/PublicPrompts/All-In-One-Pixel-Model)
+
+## Templete installation
+
+
+## Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
