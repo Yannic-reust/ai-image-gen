@@ -14,7 +14,7 @@
 
 - [All-In-One-Pixel_model](https://huggingface.co/PublicPrompts/All-In-One-Pixel-Model)
 
-## Templete installation
+## Templete installation (Boiler Plate)
 
 
 ### Vue 3 + TypeScript + Vite
